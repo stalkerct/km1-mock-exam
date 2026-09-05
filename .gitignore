@@ -21,3 +21,9 @@ Thumbs.db
 Desktop.ini
 .DS_Store
 *.tmp
+
+# ===== exe 打包中间产物（可由 build.ps1 / 本机 WebView2 SDK 重新生成）=====
+# 第三方 WebView2 SDK DLL（借用自 OpenFrp Launcher，不随仓库分发）
+exe-build/lib/
+# 网页副本（与根目录 科目一模拟考试.html 相同，build 时复制）
+exe-build/app/
