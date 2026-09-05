@@ -1,0 +1,23 @@
+# ===== 依赖与临时 =====
+node_modules/
+*.log
+
+# ===== 原始素材（大文件 / 版权敏感，不随仓库分发）=====
+# 驾校宝典原始 docx 及其 zip 副本、shiroha 之外的可重新下载素材
+research/*.docx
+research/*.zip
+
+# ===== docx 解压目录（中间产物，可由 parse 脚本重新生成）=====
+research/km1-extracted/
+research/km1-full-extracted/
+
+# ===== 压缩图片中间产物 =====
+# 724 张题图已以 base64 内嵌进 research/bank-final.json，无需再上传原图
+# （注意：排除后 build-final-bank.js 无法重跑；如需完整重建题库请保留此目录）
+research/img-compressed/
+
+# ===== 系统 / 编辑器临时文件 =====
+Thumbs.db
+Desktop.ini
+.DS_Store
+*.tmp
